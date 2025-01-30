@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اقتطاع عينات الخل والتوابل ومواد التتبيل</title>
     <style>
-        /* استيراد خط عربي جمالي */
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@600&display=swap');
 
         body {
@@ -13,55 +12,56 @@
             direction: rtl;
             text-align: right;
             margin: 0;
-            padding: 20px;
-            background-image: url('vinegar .png'); /* رابط الصورة الخلفية */
+            padding: 10px;
+            background-image: url('vinegar .png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            font-size: 3vw;
         }
         .header {
             text-align: center;
             margin-bottom: 30px;
-            padding: 20px;
-            background-color: rgba(44, 62, 80, 0.8); /* خلفية شفافة */
+            padding: 10px;
+            background-color: rgba(44, 62, 80, 0.8);
             color: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .header h1 {
             font-family: 'Amiri', serif;
-            font-size: 2.5em;
+            font-size: 2em;
             margin: 0;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         .header h2 {
             font-family: 'Cairo', sans-serif;
-            font-size: 1.8em;
+            font-size: 1.35em;
             margin: 10px 0;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
         .header h3 {
             font-family: 'Cairo', sans-serif;
-            font-size: 1.4em;
+            font-size: 1.12em;
             margin: 5px 0;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.9); /* خلفية شفافة */
-            padding: 20px;
-            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 2px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         select {
             width: 100%;
             padding: 12px;
-            font-size: 16px;
+            font-size: 1em;
             border: 2px solid #3498db;
             border-radius: 8px;
             margin-bottom: 20px;
-            background-color: rgba(236, 240, 241, 0.9); /* خلفية شفافة */
+            background-color: rgba(236, 240, 241, 0.9);
             color: #2c3e50;
             transition: all 0.3s ease;
         }
@@ -73,26 +73,26 @@
             display: none;
             opacity: 0;
             padding: 20px;
-            background-color: rgba(236, 240, 241, 0.9); /* خلفية شفافة */
+            background-color: rgba(236, 240, 241, 0.9);
             border: 2px solid #bdc3c7;
             border-radius: 8px;
             margin-top: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: opacity 0.5s ease, transform 0.3s ease;
+            transition: opacity 0.13s ease, transform 0.3s ease;
         }
         .details h2 {
             color: #34495e;
             margin-top: 0;
-            font-size: 1.8em;
+            font-size: 1.5em;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
         .details p {
-            margin: 10px 0;
+            margin: 5px 0;
             color: #2c3e50;
             line-height: 1.6;
         }
         .details ul {
-            margin: 10px 0;
+            margin: 5px 0;
             padding-left: 20px;
             color: #2c3e50;
         }
@@ -107,8 +107,9 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
         .regulations {
-            margin-top: 20px;
-            padding: 20px;
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
             background-color: rgba(236, 240, 241, 0.9);
             border: 2px solid #bdc3c7;
             border-radius: 8px;
@@ -116,7 +117,7 @@
         }
         .regulations h2 {
             color: #34495e;
-            font-size: 1.8em;
+            font-size: 1.15em;
             margin-top: 0;
         }
         .regulations ul {
@@ -145,6 +146,7 @@
         <option value="seasonings">مواد التتبيل</option>
     </select>
 
+    <!-- تفاصيل المنتجات -->
     <div id="vinegar" class="details">
         <h2>طريقة اقتطاع عينات الخل</h2>
         <p><strong>الأدوات:</strong> قفازات معقمة، عبوات زجاجية معقمة، ماصة معقمة.</p>
@@ -154,12 +156,11 @@
         <p><strong>التحديدات الميكروبيولوجية:</strong> العد البكتيري الكلي، وجود الفطريات.</p>
         <p><strong>حفظ العينات:</strong> يتم حفظ العينات في مكان بارد وجاف.</p>
         <p><strong>نقل العينات:</strong> يتم نقل العينات في عبوات محكمة الإغلاق.</p>
-        <p><strong>المدة اللازمة للتحليل:</strong>
-            <ul>
-                <li>الفيزيوكيميائية: 24-48 ساعة.</li>
-                <li>الميكروبيولوجية: 3-5 أيام.</li>
-            </ul>
-        </p>
+        <p><strong>المدة اللازمة للتحليل:</strong></p>
+        <ul>
+            <li>الفيزيوكيميائية: 24-48 ساعة.</li>
+            <li>الميكروبيولوجية: 3-5 أيام.</li>
+        </ul>
     </div>
 
     <div id="spices" class="details">
@@ -171,12 +172,11 @@
         <p><strong>التحديدات الميكروبيولوجية:</strong> العد البكتيري الكلي، وجود السالمونيلا، وجود الفطريات.</p>
         <p><strong>حفظ العينات:</strong> يتم حفظ العينات في مكان جاف وبارد.</p>
         <p><strong>نقل العينات:</strong> يتم نقل العينات في أكياس محكمة الإغلاق.</p>
-        <p><strong>المدة اللازمة للتحليل:</strong>
-            <ul>
-                <li>الفيزيوكيميائية: 24-48 ساعة.</li>
-                <li>الميكروبيولوجية: 3-5 أيام.</li>
-            </ul>
-        </p>
+        <p><strong>المدة اللازمة للتحليل:</strong></p>
+        <ul>
+            <li>الفيزيوكيميائية: 24-48 ساعة.</li>
+            <li>الميكروبيولوجية: 3-5 أيام.</li>
+        </ul>
     </div>
 
     <div id="seasonings" class="details">
@@ -188,58 +188,60 @@
         <p><strong>التحديدات الميكروبيولوجية:</strong> العد البكتيري الكلي، وجود السالمونيلا، وجود الفطريات.</p>
         <p><strong>حفظ العينات:</strong> يتم حفظ العينات في مكان جاف وبارد.</p>
         <p><strong>نقل العينات:</strong> يتم نقل العينات في أكياس محكمة الإغلاق.</p>
-        <p><strong>المدة اللازمة للتحليل:</strong>
-            <ul>
-                <li>الفيزيوكيميائية: 24-48 ساعة.</li>
-                <li>الميكروبيولوجية: 3-5 أيام.</li>
-            </ul>
-        </p>
+        <p><strong>المدة اللازمة للتحليل:</strong></p>
+        <ul>
+            <li>الفيزيوكيميائية: 24-48 ساعة.</li>
+            <li>الميكروبيولوجية: 3-5 أيام.</li>
+        </ul>
     </div>
 
-    <!-- قسم النظم واللوائح الفنية -->
-    <div id="regulations" class="regulations">
-        <h2>النظم واللوائح الفنية</h2>
-        <div id="vinegarRegulations">
-            <h3>الخل</h3>
-            <ul>
-                <li><strong>المواصفات القياسية الجزائرية (NA):</strong> NA 12345 - مواصفات الخل الغذائي.</li>
-                <li><strong>المواصفات الدولية (ISO):</strong> ISO 12345 - مواصفات سلامة الأغذية.</li>
-            </ul>
-        </div>
-        <div id="spicesRegulations">
-            <h3>التوابل</h3>
-            <ul>
-                <li><strong>المواصفات القياسية الجزائرية (NA):</strong> NA 67890 - مواصفات التوابل.</li>
-                <li><strong>المواصفات الدولية (ISO):</strong> ISO 67890 - مواصفات سلامة الأغذية.</li>
-            </ul>
-        </div>
-        <div id="seasoningsRegulations">
-            <h3>مواد التتبيل</h3>
-            <ul>
-                <li><strong>المواصفات القياسية الجزائرية (NA):</strong> NA 54321 - مواصفات مواد التتبيل.</li>
-                <li><strong>المواصفات الدولية (ISO):</strong> ISO 54321 - مواصفات سلامة الأغذية.</li>
-            </ul>
-        </div>
+    <!-- اللوائح الفنية لكل منتج -->
+    <div id="vinegarRegulations" class="regulations">
+        <h2>اللوائح الفنية للخل</h2>
+        <ul>
+            <li><strong>المواصفات القياسية الجزائرية (NA):</strong> NA 12345 - مواصفات الخل الغذائي.</li>
+            <li><strong>المواصفات الدولية (ISO):</strong> ISO 22000 - نظام إدارة سلامة الأغذية.</li>
+        </ul>
+    </div>
+
+    <div id="spicesRegulations" class="regulations">
+        <h2>اللوائح الفنية للتوابل</h2>
+        <ul>
+            <li><strong>المواصفات القياسية الجزائرية (NA):</strong> NA 67890 - مواصفات التوابل.</li>
+            <li><strong>المواصفات الدولية (ISO):</strong> ISO 9001 - نظام إدارة الجودة.</li>
+        </ul>
+    </div>
+
+    <div id="seasoningsRegulations" class="regulations">
+        <h2>اللوائح الفنية لمواد التتبيل</h2>
+        <ul>
+            <li><strong>المواصفات القياسية الجزائرية (NA):</strong> NA 54321 - مواصفات مواد التتبيل.</li>
+            <li><strong>المواصفات الدولية (ISO):</strong> ISO 17025 - متطلبات المختبرات.</li>
+        </ul>
     </div>
 </div>
 
 <script>
     function showDetails() {
-        // إخفاء جميع التفاصيل أولًا
-        var details = document.querySelectorAll('.details');
-        details.forEach(function(detail) {
-            detail.style.opacity = '0';
-            detail.style.display = 'none';
+        // إخفاء جميع العناصر
+        document.querySelectorAll('.details, .regulations').forEach(element => {
+            element.style.opacity = '0';
+            element.style.display = 'none';
         });
 
-        // عرض التفاصيل المحددة
-        var selectedProduct = document.getElementById('productSelect').value;
+        const selectedProduct = document.getElementById('productSelect').value;
         if (selectedProduct) {
-            var selectedDetail = document.getElementById(selectedProduct);
+            // عرض تفاصيل المنتج
+            const selectedDetail = document.getElementById(selectedProduct);
             selectedDetail.style.display = 'block';
-            setTimeout(function() {
-                selectedDetail.style.opacity = '1';
-            }, 10); // تأخير بسيط لتفعيل الانتقال
+            setTimeout(() => selectedDetail.style.opacity = '1', 10);
+
+            // عرض اللوائح المرتبطة
+            const selectedRegulation = document.getElementById(`${selectedProduct}Regulations`);
+            if (selectedRegulation) {
+                selectedRegulation.style.display = 'block';
+                setTimeout(() => selectedRegulation.style.opacity = '1', 10);
+            }
         }
     }
 </script>
